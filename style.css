@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato:wght@300&family=Merriweather:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Nunito:wght@200&family=PT+Sans:ital@1&family=Poppins&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff5722;
+  padding: 1rem 2rem;
+}
+
+nav p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#user-profile{
+  display: none;
+}
+
+
+
+.ul-items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.items a:hover {
+  background-color: #e64a19;
+  border-radius: 5px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 11rem;
+}
+
+.main-container div {
+  max-width: 500px;
+}
+
+.main-container h1 {
+  font-size: 3.5rem;
+  color: #ff5722;
+}
+
+.main-container p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.main-container img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-home, #signup {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  width: 150px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#login-home {
+  background-color: #ff5722;
+  color: white;
+  margin-right: 1rem;
+}
+
+#signup {
+  background-color: white;
+  color: #ff5722;
+  border: 2px solid #ff5722;
+}
+
+#login-home:hover, #signup:hover {
+  transform: translateY(-3px);
+}
+
+#login-home:hover {
+  background-color: #e64a19;
+}
+
+#signup:hover {
+  background-color: #ffccbc;
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-container img {
+    margin-top: 1rem;
+  }
+
+  nav p {
+    display: none;
+  }
+}

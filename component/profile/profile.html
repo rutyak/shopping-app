@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./profile.css">
+  </head>
+
+  <body>
+    <nav>
+      <p>MeShop.</p>
+      <ul class="ul-items">
+        <li class="items"><a href="../shop/shop.html">Shop</a></li>
+        <li class="items"><a href="../cart/cart.html">Cart</a></li>
+        <li class="items" id="user-profile"><a href="">Profile</a></li>
+      </ul>
+    </nav>
+    <div class="profile-container">
+      <div class="profile-header">
+        <h1>My Profile</h1>
+      </div>
+      <div class="profile-content" id="profile">
+        <div class="profile-avatar">
+          <img
+            src="../../img/handsome-man-with-glasses.jpg"
+            alt="User Avatar"
+            class="avatar-image"
+          />
+        </div>
+        <div class="profile-details">
+          <h3><span id="user-name"></span></h3>
+          <p>Email: <span id="user-email"></span></p>
+          <button id="Logout" onclick="handleLogout()">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./profile.js"></script>
+  </body>
+</html>

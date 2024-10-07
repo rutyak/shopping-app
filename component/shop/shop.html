@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./shop.css">
+</head>
+<body>
+    <div id="container2">
+        <nav>
+            <p>MeShop</p>
+            <ul class="ul-items">
+                <li class="items"><a href="">Shop</a></li>
+                <li class="items"><a href="../cart/cart.html">Cart</a></li>
+                <li class="items" id="user-profile"><a href="../profile/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+     
+        <div class="inner-container">
+            <div class="main-container-shop">
+                <div class="search">
+                   <img src="../../img/ant-design_search-outlined.png" alt=""><input type="search" id="search" placeholder="Search">
+                </div>
+
+                <p class="mencard-title shopping-cards">Men's Clothing</p>
+                <div class="shopping-cards" id="mens-cards"></div>
+
+                <p class="title shopping-cards">Ladies Clothing</p>
+                <div class="shopping-cards" id="womens-cards"></div>
+                
+                <p class="title shopping-cards">Jewellery</p>
+                <div class="shopping-cards" id="jewellerys-cards"></div>
+
+                <p class="title shopping-cards">Electronics</p>
+                <div class="shopping-cards" id="electronics-cards"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./shop.js"></script>
+</body>
+</html>

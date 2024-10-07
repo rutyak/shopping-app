@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="../signup/signup.css" />
+  </head>
+  <body>
+    <nav>
+      <p>MeShop.</p>
+      <ul class="ul-items">
+        <li class="items"><a href="../../../index.html">Home</a></li>
+        <li class="items"><a href="../login/login.html">Login</a></li>
+        <li class="items"><a href="../signup/signup.html">Signup</a></li>
+      </ul>
+    </nav>
+    <div id="login-container">
+      <div class="form-container">
+        <div class="form-info">
+          <p>Login</p>
+          <form action="">
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email-login"
+                placeholder="rutik234@gmail.com"
+              />
+            </div>
+            <div>
+              <label for="password"></label>
+              <input
+                type="password"
+                id="password-login"
+                placeholder="Password"
+              />
+            </div>
+
+            <button type="button" id="btnOfSignup" onclick="handleLogin()">
+              Login
+            </button>
+            <p id="alert"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>

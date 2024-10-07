@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container1">
+        <nav>
+            <p>MeShop.</p>
+            <ul class="ul-items">
+                <li class="items"><a href="./">Home</a></li>
+                <li class="items"><a href="./component/authentication/login/login.html">Login</a></li>
+                <li class="items"><a href="./component/authentication/signup/signup.html">Signup</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-container">
+            <div>
+                <h1>MeShop.</h1>
+                <p>India's fastest delivery shop</p>
+                <button type="button" id="login-home" onclick="goToLogin()">Login</button>
+                <button type="button" id="signup" onclick="goToSignup()">Signup</button>
+            </div>
+            <img src="./img/undraw_web_shopping_re_owap 1.png" alt="Shopping illustration">
+        </main>
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>
