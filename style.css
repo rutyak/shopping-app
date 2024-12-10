@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -26,11 +26,9 @@ nav p {
   font-weight: bold;
 }
 
-#user-profile{
+#user-profile {
   display: none;
 }
-
-
 
 .ul-items {
   list-style: none;
@@ -82,7 +80,8 @@ nav p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#login-home, #signup {
+#login-home,
+#signup {
   padding: 0.5rem 1rem;
   border-radius: 25px;
   width: 150px;
@@ -104,7 +103,8 @@ nav p {
   border: 2px solid #ff5722;
 }
 
-#login-home:hover, #signup:hover {
+#login-home:hover,
+#signup:hover {
   transform: translateY(-3px);
 }
 
@@ -128,5 +128,63 @@ nav p {
 
   nav p {
     display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #login-home {
+    background-color: #ff5722;
+    color: white;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-container {
+    gap: 3rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 885px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 8rem;
+  }
+
+  .main-container h1{
+    font-size: 5rem;
+  }
+
+  .main-container p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1281px) {
+  .main-container {
+    padding: 3rem;
+    gap: 4rem;
+  }
+
+  .main-container h1{
+    font-size: 5rem;
+  }
+
+  .main-container p {
+    font-size: 2.2rem;
   }
 }

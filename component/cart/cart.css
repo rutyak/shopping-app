@@ -172,3 +172,22 @@ body {
 #confirm-button:hover {
   background-color: #45a049;
 }
+
+@media (max-width: 360px) {
+  .cart-items{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-items img{
+    height: auto;
+  }
+
+  #cart-total h3{
+    font-size: 1rem;
+  }
+
+  #cart-container h1{
+    font-size: 1.5rem;
+  }
+}
