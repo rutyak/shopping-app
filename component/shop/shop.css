@@ -59,7 +59,7 @@ body {
 }
 
 .shopping-cards .cards {
-    width: 293px;
+    min-width: 293px;
     border: 1px solid gray;
     border-radius: 10px;
     margin-right: 32px;
